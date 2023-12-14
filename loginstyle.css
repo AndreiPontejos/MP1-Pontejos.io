@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*LOGIN NAVIGATION BAR*/
+
+.container{
+    display: flex;
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    display: inline-flex;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.registersection{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.registersection:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/*MAIN HEADING*/
+.main-heading{
+    background-color: rgb(53, 53, 53);
+    padding: 20px 30px 20px 50px;
+    color: white;
+}
+.main-heading h1{
+    font-size: 35px;
+}
+.main-heading p{
+    font-size: 28px;
+}
+
+/*MAIN CONTENT*/
+.maincontentlogin{ 
+    width: 100%;
+    padding: 80px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #f9f6ee;
+    
+}
+.leftcard{
+    width: 40%;
+    background: rgba(0, 0, 0, 0.5) url(images/happy-home.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 120px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: black;
+}
+.leftcard h1{
+    font-size: 50px;
+    color: white;
+}
+.leftcard p{
+    font-size: 22px;
+    color: white;
+    padding-bottom: 50px;
+}
+.leftcard:hover{
+    transition: 0.5s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 150px;
+    background: rgb(0,0,0,0.3) url(images/happy-home.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 10px 5px;
+}
+.rightcard{
+    width: 40%;
+    background: rgba(0, 0, 0, 0.5) url(images/Types-of-Dentists.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.rightcard h1{
+    font-size: 50px;
+    color: white;
+}
+.rightcard p{
+    font-size: 23px;
+    color:white;
+    padding-bottom: 50px;
+}
+.rightcard:hover{
+    transition: 0.5s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 10px 5px;
+    background: rgb(0,0,0,0.3) url(images/Types-of-Dentists.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background: rgb(53, 53, 53, 0.5);
+    border-radius: 30px;
+}
+.login:hover{
+    border: 2px solid white;
+    background: rgb(53, 53, 53, 0.9);
+    transition: 0.5s;
+}
+.indexcontainer{
+    background-color: #f9f6ee;
+}
+/*FOOTER SECTION*/
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-top: 1px solid black;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+
+/*RESPONSIVENESS*/
+@media (max-width: 768px){
+    /*NAVIGATION*/
+    body{
+        max-width: 100%;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .navlist{
+        display: inline-flex;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .navlinks{
+        align-items: center;
+        padding: 0 40px;
+        max-width: 100%;
+    }
+    .navlinklogin{
+        padding-top: 10px;
+        border: 1px solid black;
+        font-size: 20px;
+    }
+    .membernav, .adminnav, .careernav, .aboutnav{
+        display: none;
+    }
+    .logo img{
+        width: 200px;
+        height: auto;
+        position: relative;
+    }
+
+    /*MAIN CONTENT*/
+    .maincontentindex{
+        width: 100%;
+        flex-direction: column;
+    }
+    .LCindexmain{
+        width: 100%;
+        height: auto;
+    }
+    .LCindexmain h1{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .LCindexmain p{
+        font-size: 25px;
+    }
+    .RCindexmain{
+        width: 100%;
+    }
+    .RCindexmaincont{
+        background-color: #f9f6ee;
+        padding: 30px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .RCindexmain h3{
+        font-size: 20px;
+    }
+    .RCindexmain p{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+    .RCindexbtn{
+        padding: 10px 30px;
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgb(29, 29, 29);
+        font-size: 15px;
+    }
+    .maincontentindex{
+        display: flex;
+        background: rgb(0,0,0,0.8) url(images/mainbackgroundimg.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+
+
+    /*MAIN-HEADING*/
+    .main-heading{
+        background-color: rgb(53, 53, 53);
+        padding: 10px 20px 10px 30px;
+        color: white;
+    }
+    .main-heading h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .main-heading p{
+        font-size: 15px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+
+    /*MAIN-CONTENT*/
+    .maincontentlogin{ 
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        background-color: #f9f6ee;
+    }
+    .leftcard{
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5) url(images/happy-home.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 60px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 30px;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .leftcard h1{
+        font-size: 30px;
+        color: white;
+    }
+    .leftcard p{
+        font-size: 15px;
+        color: white;
+        padding-bottom: 50px;
+    }
+    .login{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        background: rgb(53, 53, 53, 0.5);
+        border-radius: 30px;
+    }
+    .rightcard{
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5) url(images/Types-of-Dentists.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 60px;
+        text-align: center;
+        border-radius: 30px;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .rightcard h1{
+        font-size: 30px;
+        color: white;
+    }
+    .rightcard p{
+        font-size: 15px;
+        color:white;
+        padding-bottom: 50px;
+    }
+    .rightcard:hover{
+        transition: 0.5s;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 10px 5px;
+        background: rgb(0,0,0,0.3) url(images/Types-of-Dentists.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .login{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        background: rgb(53, 53, 53, 0.5);
+        border-radius: 30px;
+    }
+
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 375px){
+    /*NAVIGATION*/
+
+    .navigation{
+        width: 100%;
+        padding: 0;
+    }
+    .navlist{
+        display: inline-flex;
+        margin-left: 120px;
+    }
+    .navlinks{
+        align-items: center;
+        padding: 0 5px;
+    }
+    .aboutnav{
+        display: none;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+    }
+
+    
+
+    /*MAIN-HEADING*/
+    .main-heading{
+        background-color: rgb(53, 53, 53);
+        padding: 10px 20px 10px 30px;
+        color: white;
+    }
+    .main-heading h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .main-heading p{
+        font-size: 10px;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+
+    /*MAIN-CONTENT*/
+    .maincontentlogin{ 
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        background-color: #f9f6ee;
+    }
+    .leftcard{
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5) url(images/happy-home.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 60px;
+        text-align: center;
+        justify-content: center;
+        border-radius: 30px;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .leftcard h1{
+        font-size: 25px;
+        color: white;
+    }
+    .leftcard p{
+        font-size: 10px;
+        color: white;
+        padding-bottom: 50px;
+    }
+    .login{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background: rgb(53, 53, 53, 0.5);
+        border-radius: 10px;
+
+    }
+    .rightcard{
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5) url(images/Types-of-Dentists.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 60px;
+        text-align: center;
+        border-radius: 30px;
+        color: black;
+        margin-bottom: 30px;
+    }
+    .rightcard h1{
+        font-size: 30px;
+        color: white;
+    }
+    .rightcard p{
+        font-size: 15px;
+        color:white;
+        padding-bottom: 50px;
+    }
+    .rightcard:hover{
+        transition: 0.5s;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 10px 5px;
+        background: rgb(0,0,0,0.3) url(images/Types-of-Dentists.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}

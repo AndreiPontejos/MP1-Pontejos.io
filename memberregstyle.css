@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION BAR*/
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+/*MAIN CONTENT SECTION*/
+.maincontent{
+    background: url(images/memberregistrationbackground.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.memregheader{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 50px;
+    color: white;
+}
+.memregtable{
+    max-width: 1000px;
+    align-items: center;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+tr{
+    padding: 30px;
+}
+.memregheading{
+    width: 1000px;
+    font-size: 25px;
+    font-weight: 500;
+}
+.nameinput{
+    width: 90%;
+}
+.secondrowlabelgender{
+    padding-left: 15px;
+}
+.secondrowlabel ,.secondrowlabelgender{
+    padding-top: 20px;
+}
+.addresssection{
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+textarea{
+    resize: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 95%;
+}
+.daterow td{
+    padding-top: 20px;
+}
+input{
+    height: 35px;
+    padding: 10px
+}
+input[type='radio']{
+    height: 20px;
+    width: 20px;
+}
+.movingdate{
+    margin-left: 20px;
+    text-align: center;
+}
+.memcontact, .memcontactb{
+    margin-left: 20px;
+    width: 60%;
+}
+.memcontactinfo td{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.memcontactinfob td{
+    padding-left: 50px;
+}
+.contactb{
+    width: 40%
+}
+.memcontact{
+    margin-left: 50px;
+}
+.contactc{
+    margin-left: 23px;
+}
+.contactd{
+    margin-left: 57px;
+}
+.contactd{
+    width: 40%
+}
+.dependentsection h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.dependentsectioninfo input{
+    width: 500px;
+    padding: 10px 30px;
+}
+.dependentsectioninfo td{
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.accountlinksection{
+    text-align: center;
+    justify-content: center;
+}
+.accountlinksection td{
+    padding-top: 50px;
+    font-size: 15px;
+}
+.accountlinksection h1{
+    font-weight: 300;
+}
+.accountlinkicons{
+    justify-content: center;
+    text-align: center;
+}
+.accountlinkicons i{
+    color: black;
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.fa-google, .fa-yahoo{
+    padding: 15px;
+}
+.fa-facebook-f{
+    padding: 15px 25px;
+}
+.fa-instagram{
+    padding: 15px 20px;
+}
+.accountlinkicons i:hover{
+    color: white;
+    background-color: black;
+    transition: 0.3s;
+}
+.submitbtn{
+    text-align: center;
+}
+.submitbtn button{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 10px 30px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: 300;
+}
+.submitbtn button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+/*FOOTER SECTION*/
+
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+
+    /*NAVIGATION SECTION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .logo img{
+        height: 150px;
+        width: auto;
+    }
+    .back-loginnav{
+        display: none;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 30px;
+    }
+    .navlinks a{
+        font-size: 20px;
+    }
+
+    /*MAIN CONTENT SECTION*/
+    .memregheader{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 500;
+        padding-top: 30px;
+        color: white;
+        width: 100%;
+    }
+    .memregtable{
+        width: 100%;
+        align-items: center;
+        margin-top: 25px;
+        padding: 30px;
+        background-color: white;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    tr{
+        padding: 10px;
+    }
+    .memregheading{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .nameinput{
+        width: 100%;
+    }
+    .nametd{
+        padding: 0 10px;
+    }
+    .secondrowlabelgender{
+        padding-left: 5px;
+    }
+    .secondrowlabel ,.secondrowlabelgender{
+        padding-top: 20px;
+    }
+    .addresssection{
+        height: 30px;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    textarea{
+        resize: none;
+        margin-left: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        width: 95%;
+    }
+    .daterow td{
+        padding-top: 20px;
+    }
+    input{
+        height: 35px;
+        padding: 10px
+    }
+    input[type='radio']{
+        height: 20px;
+        width: 20px;
+    }
+    .movingdate{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .memcontact, .memcontactb{
+        margin-left: 20px;
+        width: 50%;
+    }
+    .memcontactinfo td{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .memcontactinfob td{
+        padding-left: 0px;
+    }
+    .contactb{
+        width: 90%
+    }
+    .memcontact{
+        width: 90%
+    }
+    .contactc{
+        width: 90%
+    }
+    .contactd{
+        width: 90%
+    }
+    .dependentsection h1{
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    .dependentsectioninfo input{
+        width: 90%;
+        padding: 10px 30px;
+    }
+    .dependentsectioninfo td{
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    .accountlinksection{
+        text-align: center;
+        justify-content: center;
+    }
+    .accountlinksection td{
+        padding-top: 50px;
+        font-size: 10px;
+    }
+    .accountlinksection h1{
+        font-weight: 300;
+    }
+    .accountlinkicons i{
+        color: black;
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        border: 1px solid black;
+        border-radius: 30px;
+    }
+    .fa-google, .fa-yahoo{
+        padding: 15px;
+    }
+    .fa-facebook-f{
+        padding: 15px 25px;
+    }
+    .fa-instagram{
+        padding: 15px 20px;
+    }
+    .submitbtn{
+        text-align: center;
+    }
+    .submitbtn button{
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 10px 30px;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid black;
+        font-weight: 300;
+    }
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+}
+
+
+@media (max-width: 375px){
+
+    /*NAVIGATION SECTION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f6ee;
+    }
+    .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .homenav{
+        display:none;
+    }
+    .back-loginnav{
+        display: none;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 0px;
+    }
+    .navlinks a{
+        font-size: 15px;
+    }
+
+
+
+    /*MAIN CONTENT SECTION*/
+    .memregheader{
+        font-size: 15px;
+        text-align: center;
+        padding-top: 10px;
+        width: 100%;
+    }
+    .memregtable{
+        width: 100%;
+        align-items: center;
+        margin-top: 15px;
+        padding: 20px;
+        font-size: 20px;
+        box-sizing: border-box;
+    }
+    tr{
+        padding: 5px;
+    }
+    .memregheading{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .nametd{
+        padding: 0 10px;
+    }
+    .nametr td{
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    .nameinput{
+        width: 100%;
+        height: 20px;
+        font-size: 10px;
+    }
+    .secondrowform td{
+        font-size: 12px;
+    };
+    .secondrowlabelgender{
+        padding-left: 5px;
+    }
+    .secondrowlabel ,.secondrowlabelgender{
+        padding-top: 20px;
+    }
+    .genderrowoptions input{
+        height: 10px;
+        margin-left: 10px;
+    }
+    .addresssection{
+        height: 30px;
+        padding-top: 20px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+    textarea{
+        resize: none;
+        margin-left: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        width: 95%;
+        font-size: 10px;
+    }
+    .daterow td{
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .daterow input{
+        height: 10px;
+    }
+    input{
+        height: 35px;
+        padding: 10px
+    }
+    .movingdate{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .memcontact, .memcontactb{
+        margin-left: 10px;
+        width: 50%;
+    }
+    .memcontactinfo td{
+        padding-left: 0px;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .memcontactinfob td{
+        padding-left: 0px;
+        font-size: 12px;
+    }
+    .contactb{
+        width: 90%;
+        height: 12px;
+        font-size: 10px;
+    }
+    .memcontact{
+        width: 90%;
+        height: 12px;
+        font-size: 10px;
+    }
+    .contactc{
+        width: 90%;
+        height: 12px;
+        font-size: 10px;
+    }
+    .contactd{
+        width: 90%;
+        height: 12px;
+        font-size: 10px;
+    }
+    .dependentsection h1{
+        font-size: 15px;
+        font-weight: 500;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+    .dependentsectioninfo input{
+        width: 90%;
+        padding: 10px 10px;
+        height: 10px;
+        font-size: 10px;
+    }
+    .dependentsectioninfo td{
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+    .accountlinksection{
+        text-align: center;
+        justify-content: center;
+    }
+    .accountlinksection td{
+        padding-top: 30px;
+        font-size: 10px;
+    }
+    .accountlinksection h1{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .accountlinkicons i{
+        color: black;
+        margin-top: 20px;
+        margin-left: 12px;
+        font-size: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    .fa-google, .fa-yahoo{
+        padding: 15px 17px;
+    }
+    .fa-facebook-f{
+        padding: 15px 20px;
+    }
+    .fa-instagram{
+        padding: 15px 15px;
+    }
+    .submitbtn{
+        text-align: center;
+    }
+    .submitbtn button{
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 7px 20px;
+        background-color: white;
+        cursor: pointer;
+        border: 1px solid black;
+        font-weight: 300;
+    }
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }   
+}
+

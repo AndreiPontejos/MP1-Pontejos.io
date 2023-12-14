@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="availpagestyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Member Login</title>
+    <title>Avail Page</title>
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <div class="navigation">
+        <div class="logo">
+            <img src="images/topnav logo.png" alt="apexlogo">
+        </div>
+        <ul class="navlist">
+            <li class="navlinks"><a class="navlink homenav" href="index.html">HOME</a></li>
+            <li class="navlinks"><a class="navlink helpnav" href="helppage.html">HELP</a></li>
+            <li class="navlinks"><a class="navlink back-prevpage" href="memberpage.html">Back to Previous Page</a></li>           
+            <li class="navlinks"><a class="navlinklogout" href="login.html">LOG OUT</a></li>
+        </ul>
+    </div>
+    <!--MAIN CONTENT SECTION-->
+    <div class="maincontent">
+        <div class="plancontent">
+            <h2>HMO Plan</h2>
+            <h3>Health Maintenance Organizations (HMO)</h3>
+            <p class="descriptiona">Dental Health Maintenance Organization (DHMO) provides lower-cost coverage focusing on preventive care. DHMO plans encourage regular dental visits and check-ups while minimizing spending. Any out-of-pocket costs are clearly defined, and most DHMO plans do not have exclusions for pre-existing conditions or missing teeth. </p>
+            <div class="plantable">
+                <table class="planstable" cellspacing="0">
+                    <tr>
+                        <td class="data1"><b>Plan Inclusions</b></td>
+                        <td class="data2"><b>Frequency</b></td>
+                    </tr>
+                    <tr>
+                        <td class="data1">TEETH PROPHYLAXIS:</td>
+                        <td class="data2">1 time per year</td>
+                    </tr>
+                    <tr>
+                        <td class="data1">SIMPLE EXTRACTION:</td>
+                        <td class="data2">3 teeth per year</td>
+                    </tr>
+                    <tr>
+                        <td class="data1">FILLINGS:</td>
+                        <td class="data2">2 per teeth per year</td>
+                    </tr>
+                    <tr>
+                        <td class="data1">ORAL SURGERY:</td>
+                        <td class="data2">Once every 2 years</td>
+                    </tr>
+                    <tr>
+                        <td class="data1">DENTURES:</td>
+                        <td class="data2">1 upper and lower jaw every 2 years</td>
+                    </tr>
+                    <tr>
+                        <td class="data1">IMPLANTS:</td>
+                        <td class="data2">Once every 5 years</td>
+                    </tr>
+                    <tr>
+                        <td class="data1">PERIODONTAL SURGERY:</td>
+                        <td class="data2">2 times per year</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="paymentsection">
+                <h1>PAYMENT METHOD</h1>
+                <div class="paymenttablesection">
+                    <table class="paymenttable">
+                        <tr class="paytablehead">
+                            <td colspan="2">BILLING ADDRESS</td>
+                            <td colspan="2">PAYMENT</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Full Name:</td>
+                            <td colspan="2">Accepted Cards/Payment:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="fullname" id="payfullname" placeholder="Enter Text Here"></td>
+                            <td colspan="2">
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <i class="fa-brands fa-cc-paypal"></i>
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                                <i class="fa-brands fa-apple-pay"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Email Address:</td>
+                            <td colspan="2">Card Owner Name:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="payemail" id="payemail" placeholder="Enter Text Here"></td>
+                            <td colspan="2"><input type="text" name="paycardname" id="paycardname" placeholder="Enter Text Here"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Address:</td>
+                            <td colspan="2">Card Number:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="payaddress" id="payaddress" placeholder="Enter Text Here"></td>
+                            <td colspan="2"><input type="text" name="paycardnum" id="paycardnum" placeholder="Enter Text Here"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">City/Province:</td>
+                            <td colspan="2">Expiration Date:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" name="paycity" id="paycity" placeholder="Enter Text Here"></td>
+                            <td colspan="2"><input type="date" name="payexpdate" id="payexpdate"></td>
+                        </tr>
+                        <tr class="paytableprice">
+                            <td colspan="4">PHP 7,999 / MONTH</td>
+                        </tr>
+                        <tr class="termscol" >
+                            <td colspan="4">Review the <a href="#">Terms and Conditions</a> by clicking on the hyperlink.</td>
+                        </tr>
+                        <tr class="paymentbutton">
+                            <td colspan="4"><a class="paymentbtn" href="#">PROCESS PAYMENT</a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

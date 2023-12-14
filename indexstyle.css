@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION BAR*/
+.container{
+    display: flex;
+    font-style: 'poppins';
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 10px 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.registersection{
+    border: 2px solid black;
+    font-size: 30px;
+    padding: 10px 30px;
+    margin-left: 100px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.registersection:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.indexnav{
+    z-index: 999;
+    box-shadow: 0 2px 50px 3px;
+}
+.navlinklogin{
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.navlinklogin:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*MAIN CONTENT*/
+.maincontentindex{
+    display: flex;
+    background: rgb(0,0,0,0.5) url(images/mainbackgroundimg.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.LCindexmain{
+    width: 50%;
+    height: 700px;
+    color: white;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+}
+.LCindexmain h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 80px;
+    padding-top: 200px;
+}
+.LCindexmain p{
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
+}
+.RCindexmain{
+    width: 50%;
+    padding: 100px
+}
+.RCindexmaincont{
+    background-color: #f9f6ee;
+    padding: 50px;
+    height: auto;
+    margin-top: 70px;
+}
+.RCindexmain h3{
+    font-size: 40px;
+}
+.RCindexmain p{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+.RCindexbtn{
+    padding: 20px 40px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(29, 29, 29);
+    font-size: 20px;
+}
+.RCindexbtn:hover{
+    background-color: rgb(29, 29, 29);
+    transition: 0.3s;
+    color: white;
+}
+.indexgetstarted{
+    background-color: rgb(29, 29, 29);
+    padding: 50px 70px;
+    color:white;
+}
+
+/*GET STARTED SECTION*/
+
+.indexgetstarted{
+    padding: 100px;
+}
+.indexgetstarted h2{
+    font-size: 50px;
+}
+.indexgetstarted p{
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+.indexgetstartedbtn{
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 20px 40px;
+}
+.indexgetstartedbtn:hover{
+    background-color: rgb(231, 231, 231);
+    transition: 0.5s;
+    color: black;
+}
+
+/*PLANS SECTION*/
+
+.indexplans{
+    padding: 50px 70px;
+    justify-content: center;
+    text-align: center;
+}
+.indexplans h1{
+    font-size: 50px;
+    width: 100%;
+}
+.indexplanscards{
+    display: flex;
+}
+.indexplanscard{
+     padding: 30px;
+     justify-content: center;
+     text-align: center;
+     border: 1px solid black;
+     margin: 50px 10px;
+     width: 25%;
+}
+.indexplanscards h4{
+    font-size: 30px;
+}
+.carda p{
+    margin-bottom: 50px;
+}
+.cardb p{
+    margin-bottom: 72px;
+}
+.cardc p{
+    margin-bottom: 45px;
+}
+.cardd p{
+    margin-bottom: 68px;
+}
+.indexplanscard a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 30px;
+}
+.indexplanscard a:hover{
+    background-color: rgb(29, 29, 29);
+    transition: 0.3s;
+    color: white;
+}
+.indexplancardphoto{
+    width: 100%;
+}
+
+/*PERKS SECTION*/
+
+.perkssection{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 100px 100px;
+    display: flex;
+}
+.perkssectionphoto img{
+    height: 450px;
+}
+.perkssectioncontent{
+    padding-left: 100px;
+}
+.perkssection h1{
+    font-size: 45px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+.perkssection p{
+    font-size: 23px;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 75px;
+}
+.perkssection a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 50px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.perkssection a:hover{
+    color:black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+/*FOOTER SECTION*/
+.indexfooters{
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+    /*NAVIGATION*/
+
+    .navlist{
+        display: inline-flex;
+        margin-right: auto;
+        
+    }
+    .navlinks{
+        align-items: center;
+        max-width: 100%;
+        font-size: 20px;
+    }
+    .navlinklogin{
+        padding-top: 10px;
+        border: 1px solid black;
+        font-size: 20px;
+    }
+    .membernav, .adminnav, .careernav, .aboutnav{
+        display: none;
+    }
+    .logo img{
+        width: 200px;
+        height: auto;
+        position: relative;
+    }
+
+
+    /*MAIN CONTENT SECTION*/
+    .maincontentindex{
+        width: 100%;
+        flex-direction: column;
+    }
+    .LCindexmain{
+        width: 100%;
+        height: auto;
+    }
+    .LCindexmain h1{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .LCindexmain p{
+        font-size: 25px;
+    }
+    .RCindexmain{
+        width: 100%;
+    }
+    .RCindexmaincont{
+        background-color: #f9f6ee;
+        padding: 30px;
+        height: auto;
+        margin-top: 10px;
+    }
+    .RCindexmain h3{
+        font-size: 20px;
+    }
+    .RCindexmain p{
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+    .RCindexbtn{
+        padding: 10px 30px;
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgb(29, 29, 29);
+        font-size: 15px;
+    }
+    .maincontentindex{
+        display: flex;
+        background: rgb(0,0,0,0.8) url(images/mainbackgroundimg.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /*GET STARTED SECTION*/
+    .indexgetstarted{
+        padding: 50px;
+    }
+    .indexgetstarted h2{
+        font-size: 30px;
+    }
+    .indexgetstarted p{
+        font-size: 20px;
+        font-weight: 200;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+    .indexgetstartedbtn{
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 30px;
+    }
+    /*INDEX SECTION*/
+    .indexplans{
+        padding: 30px 40px;
+        justify-content: center;
+        text-align: center;
+    }
+    .indexplans h1{
+        font-size: 40px;
+        width: 100%;
+    }
+    .indexplanscards{
+        display: flex;
+        flex-direction: column;
+    }
+    .indexplanscard{
+         padding: 30px 50px;
+         justify-content: center;
+         text-align: center;
+         border: 1px solid black;
+         margin: 30px 0px;
+         min-width: 100%;
+         flex-direction: column;
+    }
+    .indexplanscards h4{
+        font-size: 30px;
+    }
+
+    .carda p{
+        margin-bottom: 50px;
+    }
+    .cardb p{
+        margin-bottom: 72px;
+    }
+    .cardc p{
+        margin-bottom: 45px;
+    }
+    .cardd p{
+        margin-bottom: 68px;
+    }
+    .indexplanscard a{
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 30px;
+    }
+    /*PERKS SECTION*/
+
+.perkssection{
+    background-color: rgb(51, 51, 51);
+    color: white;
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+}
+.perkssectionphoto{
+    text-align: center;
+    padding: 20px 0;
+}
+.perkssectionphoto img{
+    height: 300px;
+}
+.perkssectioncontent{
+    text-align: center;
+    padding: 0;
+}
+.perkssection h1{
+    font-size: 43px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.perkssection p{
+    font-size: 23px;
+    font-weight: 200;
+    text-align: left;
+    margin-bottom: 75px;
+}
+.perkssection a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+/*FOOTER SECTION*/
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.indexfooter{
+    margin: 20px;
+}
+.indexfooter li{
+    list-style: none;
+    padding: 2px 0;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 20px;
+    padding: 10px 0;
+}
+.indexfooter li{
+    font-size: 10px;
+    line-height: 20px;
+}
+.footerd img{
+    height: 200px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+    
+}
+@media (max-width: 375px){
+    /*NAVIGATION*/
+
+    .navlist{
+        display: inline-flex;
+        margin-right: auto;
+    }
+    .navlinks{
+        align-items: center;
+        padding: 0;
+    }
+    .navlinklogin{
+        padding-top: 10px;
+        border: 1px solid black;
+        font-size: 15px;
+        margin-left: 70px;
+    }
+    .membernav, .adminnav, .careernav, .aboutnav, .helpnav{
+        display: none;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+        position: relative;
+    }
+    /*MAIN CONTENT*/
+    .maincontentindex{
+        width: 100%;
+        flex-direction: column;
+    }
+    .LCindexmain{
+        width: 100%;
+        height: auto;
+    }
+    .LCindexmain h1{
+        font-size: 20px;
+        padding-top: 10px;
+        line-height: 25px;
+    }
+    .LCindexmain p{
+        font-size: 15px;
+    }
+    .RCindexmain{
+        width: 100%;
+        padding: 20px;
+    }
+    .RCindexmaincont{
+        background-color: #f9f6ee;
+        padding: 20px;
+        height: auto;
+        margin-top: 1px;
+    }
+    .RCindexmain h3{
+        font-size: 15px;
+    }
+    .RCindexmain p{
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+    .RCindexbtn{
+        padding: 7px 20px;
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgb(29, 29, 29);
+        font-size: 10px;
+    }
+    .maincontentindex{
+        display: flex;
+        background: rgb(0,0,0,0.9) url(images/mainbackgroundimg.jpg);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    /*GET STARTED SECTION*/
+    .indexgetstarted{
+        padding: 40px;
+    }
+    .indexgetstarted h2{
+        font-size: 20px;
+    }
+    .indexgetstarted p{
+        font-size: 10px;
+        font-weight: 200;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+    .indexgetstartedbtn{
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 30px;
+    }
+    /*INDEX SECTION*/
+    .indexplans{
+        padding: 25px 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .indexplans h1{
+        font-size: 25px;
+        width: 100%;
+    }
+    .indexplanscards{
+        display: flex;
+        flex-direction: column;
+    }
+    .indexplanscard{
+         padding: 20px 40px;
+         justify-content: center;
+         text-align: center;
+         border: 1px solid black;
+         margin: 30px 0px;
+         min-width: 100%;
+         flex-direction: column;
+    }
+    .indexplanscards h4{
+        font-size: 20px;
+    }
+    .carda p{
+        margin-bottom: 50px;
+    }
+    .cardb p{
+        margin-bottom: 72px;
+    }
+    .cardc p{
+        margin-bottom: 45px;
+    }
+    .cardd p{
+        margin-bottom: 68px;
+    }
+    .indexplanscard a{
+        text-decoration: none;
+        color: black;
+        border: 1px solid black;
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    /*PERKS SECTION*/
+
+    .perkssection{
+        background-color: rgb(51, 51, 51);
+        color: white;
+        padding: 50px 80px;
+        display: flex;
+        flex-direction: column;
+    }
+    .perkssectionphoto{
+        text-align: center;
+        padding:0;
+    }
+    .perkssectionphoto img{
+        height: 140px;
+    }
+    .perkssectioncontent{
+        text-align: center;
+        padding: 0;
+    }
+    .perkssection h1{
+        font-size: 15px;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+    .perkssection p{
+        font-size: 10px;
+        font-weight: 200;
+        text-align: left;
+        margin-bottom: 55px;
+    }
+    .perkssection a{
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 7px 20px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+
+}

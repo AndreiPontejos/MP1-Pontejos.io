@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memberpagestyle.css">
+    <title>Insurance Plans</title>
+</head>
+<body>
+        <!--HEADER-->
+    <div class="header">
+        <div class="navigation">
+            <div class="logo">
+                <img src="images/topnav logo.png" alt="apexlogo">
+            </div>
+            <ul class="navlist">
+                <li class="navlinks"><a class ="navlink aboutnav" href="#">ABOUT</a></li>
+                <li class="navlinks"><a class ="navlink helpnav" href="helppage.html">HELP</a></li>
+                <li class="navlinks"><a class="navlinklogout" href="login.html">LOG OUT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--MAIN CONTENT-->
+    <div class="maincontent">
+        <div class="memberstatus">
+            <h2>Membership Status</h2>
+            <table class="memberstatustable">
+                <tr>
+                    <td class="td1">Registration Date: </td>
+                    <td class="td2">10 September 2022</td>
+                    <td class="td1">Member ID:</td>
+                    <td class="td2">999-9999</td>
+                </tr>
+                <tr>
+                    <td class="td1">Membership Termination:</td>
+                    <td class="td2">01 January 9999</td>
+                    <td class="td1">Status:</td>
+                    <td class="td2">Platinum Member</td>
+                </tr>
+                <tr>
+                    <td class="td1">Active Plans:</td>
+                    <td class="td2">HMO | EPO | Loyalty Plus</td>
+                    <td class="td1">Most Recent Appointment:</td>
+                    <td class="td2">19 August 2023</td>
+                </tr>
+                <tr>
+                    <td class="td1">Assigned Dentist:</td>
+                    <td class="td2">Yes</td>
+                    <td class="td1">Assigned Dental Clinic:</td>
+                    <td class="td2">No</td>
+                </tr>
+                <tr>
+                    <td class="td1">Dependents:</td>
+                    <td class="td2">2</td>
+                    <td class="td1">Claims Pending:</td>
+                    <td class="td2">Yes</td>
+                </tr>
+            </table>
+        </div>
+        <div class="appointmentsetsection">
+            <h1>SET YOUR APPOINTMENT</h1>
+                <table class="appointmenttable">
+                    <tr>
+                        <td class="tda">Affiliated Clinic:</td>
+                        <td class="tdb">
+                            <select class="dentalclinic">
+                                <option>Dental Clinic 1</option>
+                                <option>Dental Clinic 2</option>
+                                <option>Dental Clinic 3</option>
+                                <option>Dental Clinic 4</option>
+                                <option>Dental Clinic 5</option>
+                                <option>Dental Clinic 6</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tda">Affiliated Dentist:</td>
+                        <td class="tdb">
+                            <select class="dentalclinic" required>
+                                <option>Dentist 1</option>
+                                <option>Dentist 2</option>
+                                <option>Dentist 3</option>
+                                <option>Dentist 4</option>
+                                <option>Dentist 5</option>
+                                <option>Dentist 6</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="appointmentdate">
+                        <td class="tda">Appointment Date:</td>
+                        <td class="tdb"><input class="dateoptionapp" type="date" required></td>
+                    </tr>
+                    <tr>
+                        <td class="tda">Appointment Time:</td>
+                        <td class="tdb">
+                            <span>AM</span><input class="radiobtn" type="radio" value="am" name="am" id="am" required>
+                            <span>PM</span><input class="radiobtn" type="radio" value="pm" name="am" id="am" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="submitrow" colspan="2"><button type="submit" name="submit" id="submitbtn">SET APPOINTMENT</button></td>
+                    </tr>
+                </table>
+        </div>
+        <div class="plancards">
+            <h1>INSURANCE PLANS</h1>
+            <div class="insurancecards">
+                <div class="plancard plancarda">
+                    <h2>HMO Plan</h2>
+                    <h3>Health maintenance organizations (HMO)</h3>
+                    <p class="descriptiona">Dental Health Maintenance Organization (DHMO) provides lower-cost coverage focusing on preventive care. DHMO plans encourage regular dental visits and check-ups while minimizing spending. Any out-of-pocket costs are clearly defined, and most DHMO plans do not have exclusions for pre-existing conditions or missing teeth. </p>
+                    <a class="moreinfo" href="#">More Info</a>
+                    <p class="planprice">PHP 7,999 / Month</p>
+                    <a class="availbtn" href="availpage.html">AVAIL</a>
+                </div>
+                <div class="plancard plancardb">
+                    <h2>PPO Plan</h2>
+                    <h3>Preferred Provider Organizations (PPO)</h3>
+                    <p class="descriptionb">A PPO plan will offer you a variety of choices from a network of dentists. You also have the flexibility to visit any licensed dentist – even out-of-network dentists— but you can maximize your savings and benefits by visiting a PPO network dentist who has agreed to lower fees. In other words, your out-of-pocket expense is much less. </p>
+                    <a class="moreinfo" href="#">More Info</a>
+                    <p class="planprice">PHP 14,999 / Month</p>
+                    <a class="availbtn" href="#">AVAIL</a>
+                </div>
+                <div class=" plancard plancardc">
+                    <h2>EPO Plan</h2>
+                    <h3>Exclusive Provider Organization (EPO)</h3>
+                    <p class="descriptionc">An Exclusive Provider Organization (EPO) is a network of participating dentists that have agreed to accept reduced fees (commonly called the negotiated fee) as payments for patients with EPO dental plans. It’s similar to a PPO but at a much lower premium cost. This lower cost is possible because you can only select a dentist that is a part of the EPO network.</p>
+                    <a class="moreinfo" href="#">More Info</a>
+                    <p class="planprice">PHP (Price negotiated by provider and ) / Month</p>
+                    <a class="availbtn" href="#">AVAIL</a>
+                </div>
+            </div>
+            <h1 class="exc-header">Other exclusive plans</h1>
+            <div class="insurancecards">
+                <div class="plancard plancardd">
+                    <h2>Loyalty Plan</h2>
+                    <p class="descriptiond">Customers sign up to premium loyalty programmes at the fraction of the cost of products or services. In return, they get cashback rewards scaled to their level of spending. Plus rewards are based on their individual needs, behaviours and preferences. </p>
+                    <a class="moreinfo" href="#">More Info</a>
+                    <p class="planprice">PHP 17,999 / Month</p>
+                    <a class="availbtn" href="#">AVAIL</a>
+                </div>
+                <div class="plancard plancarde">
+                    <h2>Loyalty Plus Plan</h2>
+                    <p class="descriptione">Customers earn points whenever they buy policies or services. In return, they spend these loyalty points on rewards such as discounts on insurance premiums or free insurance coverage.</p>
+                    <a class="moreinfo" href="#">More Info</a>
+                    <p class="planprice">PHP 19,999 / Month</p>
+                    <a class="availbtn" href="#">AVAIL</a>
+                </div>
+                <div class="plancard plancardf">
+                    <h2>Loyalty Light Plan</h2>
+                    <h3>Exclusive Provider Organization (EPO)</h3>
+                    <p class="descriptionf">Depending on the type of insurance, some companies also gamify their loyalty programme. This encourages customers to complete certain activities. Whether that’s a quiz containing educational content, physical goals to improve their health or encourage behaviours like safe driving.</p>
+                    <a class="moreinfo" href="#">More Info</a>
+                    <p class="planprice">PHP 16,999 / Month</p>
+                    <a class="availbtn" href="#">AVAIL</a>
+                </div>
+            </div>
+        </div>
+        <!--FOOTER SECTION-->
+    <div class="indexfooters">
+        <div class="indexfooter footera">
+            <h3>Learn</h3>
+            <ul>
+                <li><a href="#" target="blank">Help Center</a></li>
+                <li><a href="#" target="blank">About Us</a></li>
+                <li><a href="#" target="blank">Community</a></li>
+                <li><a href="#" target="blank">Blogs</a></li>
+                <li><a href="#" target="blank">Insurance</a></li>
+            </ul>
+        </div>
+        <div class="indexfooter footerb">
+            <h3>Get Started</h3>
+            <ul>
+                <li><a href="#" target="blank">Register</a></li>
+                <li><a href="#" target="blank">Available Plans</a></li>
+                <li><a href="#" target="blank">Login</a></li>
+                <li><a href="#" target="blank">Member Page</a></li>
+                <li><a href="#" target="blank">Admin Page</a></li>
+            </ul>
+        </div>
+        <div class="indexfooter footerc">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#" target="blank">Sponsors</a></li>
+                <li><a href="#" target="blank">Agencies</a></li>
+                <li><a href="#" target="blank">Contact Support</a></li>
+                <li><a href="#" target="blank">Cookie Settings</a></li>
+                <li><a href="#" target="blank">Terms and Privacy</a></li>
+            </ul>
+        </div>
+        <div class="indexfooter footerd">
+            <img src="images/square logo.png">
+        </div>
+    </div>
+    </div>
+</body>
+</html>

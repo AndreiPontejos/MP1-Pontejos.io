@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memberregstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <title>Registration</title>
+</head>
+<body>
+    <!--NAVIGATION SECTION-->
+    <div class="navigation">
+        <div class="logo">
+            <img src="images/topnav logo.png" alt="apexlogo">
+        </div>
+        <ul class="navlist">
+            <li class="navlinks"><a class="navlink homenav" href="index.html">HOME</a></li>
+            <li class="navlinks"><a class="navlink" href="helppage.html">HELP</a></li>
+            <li class="navlinks"><a class="navlink back-loginnav" href="login.html">Back to Login Page</a></li>            
+        </ul>
+    </div>
+    <!--MAIN CONTENT SECTION-->
+    <div class="maincontent">
+        <div>
+            <header class="memregheader">Member Registration</header>
+        </div>
+        <div>
+            <table class="memregtable" cellspacing="0">
+                <tr>
+                    <td class="memregheading" colspan="4">Policy Holder Details</td>
+                </tr>
+                <tr class="nametr">
+                    <td colspan="2">First Name</td>
+                    <td colspan="2">Surname</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="nametd"><input class="nameinput" type="text" placeholder="Enter Text Here" required></td>
+                    <td colspan="2" class="nametd"><input class="nameinput" type="text" placeholder="Enter Text Here" required></td>
+                </tr>
+                <tr class="secondrowform">
+                    <td class="secondrowlabel" colspan="2">Date of Birth</td>
+                    <td class="secondrowlabelgender">Male</td>
+                    <td class="secondrowlabelgender">Female</td>
+                </tr>
+                <tr class="genderrowoptions">
+                    <td colspan="2"> <input type="date" required></td>
+                    <td><input class="radiobtn" type="radio" name="male"></td>
+                    <td><input class="radiobtn" type="radio" name="female"></td>
+                </tr>
+                <tr>
+                    <td class="addresssection" colspan="4">Home Address<textarea cols="135" rows="1"></textarea></td>
+                </tr>
+                <Tr class="daterow">
+                    <td colspan="4">Date of moving to this address<input class="movingdate" type="date"></td>
+                </Tr>
+                <tr class="memcontactinfo">
+                    <td colspan="2"><span>Day Tel No.</span><input class="memcontact contacta" type="tel" id="phone" name="phone" placeholder="02-####-####" required></td>
+                    <td colspan="2"><span>Evening Tel No.</span><input class="memcontact contactb" type="tel" id="phone" name="phone" placeholder="02-####-####" required></td>
+                </tr>
+                <tr class="memcontactinfob">
+                    <td colspan="2"><span>Mobile Tel No.</span><input class="memcontactb contactc" type="tel" id="phone" name="phone" placeholder="+63-9##-###-####" required></td>
+                    <td colspan="2"><span>Email Address</span><input class="memcontactb contactd" type="text" id="email" name="email" placeholder="Enter Text Here" required></td>
+                </tr>
+                <tr class="dependentsection">
+                    <td colspan="4"><h1>Dependent Information</h1></td>
+                </tr>
+                <tr class="dependentsectioninfo">
+                    <td colspan="2"><span>Dependent 1 Full Name</span><br/><input class="siblingname" type="text" id="sibling1" name="phone" placeholder="Enter Text Here" required></td>
+                    <td colspan="2"><span>Relationship</span><input class="siblingname" type="text" id="sibling1" name="phone" placeholder="Enter Text Here" required></td>            
+                </tr>
+                <tr class="dependentsectioninfo">
+                    <td colspan="2"><span>Dependent 2 Full Name</span><input class="siblingname" type="text" id="sibling1" name="phone" placeholder="Enter Text Here" required></td>
+                    <td colspan="2"><span>Relationship</span><input class="siblingname" type="text" id="sibling1" name="phone" placeholder="Enter Text Here" required></td>            
+                </tr>
+                <tr class="accountlinksection">
+                    <td colspan="4"><h1>Link your account to your socials:</h1></td>            
+                </tr>
+                <tr class="accountlinkicons">
+                    <td colspan="4">
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-yahoo"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </td>            
+                </tr>
+                <tr class="submitbtn">
+                    <td colspan="4">
+                        <button type="submit">SUBMIT</button>
+                    </td>
+
+                </tr>
+            </table>    
+        </div>
+    </div>
+     <!--FOOTER SECTION-->
+    <div class="indexfooters">
+        <div class="indexfooter footera">
+            <h3>Learn</h3>
+            <ul>
+                <li><a href="#" target="blank">Help Center</a></li>
+                <li><a href="#" target="blank">About Us</a></li>
+                <li><a href="#" target="blank">Community</a></li>
+                <li><a href="#" target="blank">Blogs</a></li>
+                <li><a href="#" target="blank">Insurance</a></li>
+            </ul>
+        </div>
+        <div class="indexfooter footerb">
+            <h3>Get Started</h3>
+            <ul>
+                <li><a href="#" target="blank">Register</a></li>
+                <li><a href="#" target="blank">Available Plans</a></li>
+                <li><a href="#" target="blank">Login</a></li>
+                <li><a href="#" target="blank">Member Page</a></li>
+                <li><a href="#" target="blank">Admin Page</a></li>
+            </ul>
+        </div>
+        <div class="indexfooter footerc">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#" target="blank">Sponsors</a></li>
+                <li><a href="#" target="blank">Agencies</a></li>
+                <li><a href="#" target="blank">Contact Support</a></li>
+                <li><a href="#" target="blank">Cookie Settings</a></li>
+                <li><a href="#" target="blank">Terms and Privacy</a></li>
+            </ul>
+        </div>
+        <div class="indexfooter footerd">
+            <img src="images/square logo.png">
+        </div>
+</body>
+</html>

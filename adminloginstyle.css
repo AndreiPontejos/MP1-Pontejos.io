@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*HEADER SECTION*/
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.registersection{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.registersection:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*MAIN CONTENT SECTION*/
+.adminmainsection{
+    width: 100%;
+    display: flex;
+    background: rgb(0,0,0,0.6) url(images/adminloginbackground.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 510px;
+}
+.LCadminmain{
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+.LCadminmain h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+.RCadminmain{
+    width: 50%;
+    background-color: rgb(36, 36, 36);
+    margin: 50px 100px;
+    color: white;
+    padding: 50px 100px;
+    border-radius: 30px;
+}
+.adminlogin input{
+    width: 500px;
+    margin-top: 20px;
+    height: 40px;
+    padding: 20px;
+    border: none;
+}
+.adminloginbtn{
+    padding: 10px 20px;
+    margin: 20px 0px;
+    color: white;
+    background: rgb(36, 36, 36);
+    border: 1px solid white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.adminlogin p{
+    padding: 20px 0px;
+}
+.adminloginbtn:hover{
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
+.admincompany{
+    margin-bottom: 40px;
+}
+
+/*FOOTER SECTION*/
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+    /*NAVIGATION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f6ee;
+    }
+    .logo img{
+        height: 100px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+    }
+    .navlinks a{
+        color:black;
+        text-decoration: none;
+    }
+    .registersection{
+        border: 2px solid black;
+        font-size: 17px;
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+    .back-loginlink{
+        display:none;
+    }
+
+    /*MAIN CONTENT SECTION*/
+    .adminmainsection{
+        width: 100%;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+    }
+    .LCadminmain{
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        color: white;
+    }
+    .LCadminmain h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .RCadminmain{
+        width: 70%;
+        margin: 50px auto;
+        padding: 50px 70px;
+    }
+    .RCadminmain h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .adminlogin input{
+        width: 100%;
+        margin-top: 20px;
+        height: 40px;
+        padding: 20px;
+        border: none;
+    }
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+}
+
+@media (max-width: 375px){
+    /*NAVIGATION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+    }
+    .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 10px;
+        align-items: center;
+    }
+    .navlinks a{
+        color:black;
+        text-decoration: none;
+    }
+    .registersection{
+        border: 1px solid black;
+        font-size: 10px;
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+    .back-loginlink, .helpnav, .homenav{
+        display:none;
+    }
+
+    /*MAIN SECTION*/
+    .adminmainsection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .LCadminmain{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .LCadminmain h1{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .RCadminmain{
+        width: 80%;
+        margin: 50px auto;
+        padding: 30px 25px;
+        border-radius: 30px;
+    }
+    .RCadminmain h1{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .adminlogin input{
+        width: 100%;
+        margin-top: 20px;
+        height: 20px;
+        padding: 15px;
+        border: none;
+        font-size: 12px;
+    }
+    .adminloginbtn{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+
+
+     /*FOOTER SECTION*/
+     .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}

@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION BAR*/
+.container{
+    display: flex;
+    font-style: 'poppins';
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    display: inline-flex;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.registersection{
+    border: 2px solid black;
+    font-size: 30px;
+    padding: 10px 30px;
+    margin-left: 100px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.indexnav{
+    z-index: 999;
+    box-shadow: 0 2px 50px 3px;
+}
+.navlinklogout{
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.navlinklogout:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*MAIN CONTENT SECTION*/
+.maincontent{
+    background: rgb(0, 0, 0, 0.5) url(images/memberregistrationbackground.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+.plancontent{
+    background-color: #f9f6ee;
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px 60px;
+    color: black;
+    
+}
+.plancontent h2{
+    font-size: 45px;
+}
+.plancontent h3{
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.plancontent p{
+    font-size: 20px;
+}
+.planstable{
+    padding: 20px;
+    margin: 50px auto;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    border-radius: 30px;
+}
+.planstable td{
+    padding: 20px;
+    font-size: 20px;
+}
+.data1{
+    text-align: right;
+}
+.data2{
+    text-align: left;
+}
+.paymentsection h1{
+    font-weight: 300;
+    padding-left: 30px;
+    font-size: 40px;
+}
+.paymenttable{
+    margin: 30px auto;
+    width: 90%;
+}
+.paymenttable td{
+    padding: 0 20px;
+    font-size: 20px;
+}
+.paymenttable input{
+    height: 30px;
+    width: 100%;
+    padding: 20px;
+}
+.paytablehead td{
+    font-size: 30px;
+    padding-bottom: 40px;
+}
+.paytableprice td{
+    font-size: 30px;
+    padding-top: 50px;
+}
+.paymentbtn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 30px;
+    font-size: 30px;
+}
+.termscol td{
+    padding-bottom: 50px;
+}
+.paymentbutton {
+    text-align: center;
+    justify-content: center;
+}
+.paymentbtn:hover{
+    color: white;
+    background-color: rgb(53, 53, 53);
+    transition: 0.5s;
+}
+.fa-brands{
+    font-size: 35px;
+    padding: 0 10px;
+}
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+
+    /*NAVIGATION*/
+    body{
+        max-width: 100%;
+    }
+    .navlist{
+        display: inline-flex;
+        margin-left: 50px;
+    }
+    .navlinks{
+        align-items: center;
+        max-width: 100%;
+        font-size: 15px;
+    }
+    .navlinklogin{
+        padding-top: 10px;
+        border: 1px solid black;
+        font-size: 20px;
+    }
+    .back-prevpage{
+        display:none;
+    }
+    .logo img{
+        width: 200px;
+        height: auto;
+        position: relative;
+    }
+    .navlinklogout{
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    /*MAIN CONTENT SECTION*/
+    .maincontent{
+        padding: 30px;
+    }
+    .plancontent{
+        width: 90%;
+        margin: 0 auto;
+        padding: 50px 60px;
+        color: black;
+    }
+    .plancontent h2{
+        font-size: 35px;
+    }
+    .plancontent h3{
+        font-size: 20px;
+        padding-bottom: 40px;
+    }
+    .plancontent p{
+        font-size: 15px;
+    }
+    .planstable{
+        padding: 10px;
+        margin: 50px auto;
+        width: 90%;
+    }
+    .planstable td{
+        padding: 15px;
+        font-size: 15px;
+    }
+    .paymentsection h1{
+        font-weight: 300;
+        padding-left: 20px;
+        font-size: 30px;
+    }
+    .paymenttable{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .paymenttable td{
+        padding: 0 20px;
+        font-size: 15px;
+    }
+    .paymenttable input{
+        height: 15px;
+        width: 100%;
+        padding: 15px;
+    }
+    .paytablehead td{
+        font-size: 20px;
+        padding-bottom: 30px;
+    }
+    .paytableprice td{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .paymentbtn{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .termscol td{
+        padding-bottom: 50px;
+    }
+    .paymentbutton {
+        text-align: center;
+        justify-content: center;
+    }
+    .paymentbtn:hover{
+        color: white;
+        background-color: rgb(53, 53, 53);
+        transition: 0.5s;
+    }
+    .fa-brands{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
+
+
+
+
+@media (max-width: 375px){
+    /*NAVIGATION*/
+    body{
+        max-width: 100%;
+    }
+    .navigation{
+        width: 100%;
+    }
+    .navlist{
+        display: inline-flex;
+        margin-right: 0;
+    }
+    .navlinks{
+        align-items: center;
+        padding: 0;
+    }
+    .navlinklogin{
+        padding-top: 10px;
+        border: 1px solid black;
+        font-size: 15px;
+        margin-left: 70px;
+    }
+    .homenav, .helpnav{
+        display: none;
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+        position: relative;
+    }
+
+    /*MAIN CONTENT SECTION*/
+
+    .maincontent{
+        padding: 20px;
+    }
+    .plancontent{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0px;
+        color: black;
+    }
+    .plancontent h2{
+        font-size: 30px;
+        padding: 0 20px;
+    }
+    .plancontent h3{
+        font-size: 17px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .plancontent p{
+        font-size: 12px;
+        padding: 0 20px;
+    }
+    .planstable{
+        padding: 0px;
+        margin: 50px auto;
+        width: 95%;
+    }
+    .planstable td{
+        padding: 12px;
+        font-size: 15px;
+    }
+    .paymentsection h1{
+        padding: 0 auto;
+        font-size: 25px;
+    }
+    .paymenttable{
+        margin: 10px auto;
+        max-width: 100%;
+        table-layout: fixed;
+    }
+    .paymenttable td{
+        padding: 0 0;
+        font-size: 12px;
+    }
+    .paymenttable input{
+        height: 15px;
+        width: 100%;
+        padding: 15px;
+    }
+    .paytablehead td{
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+    .paytableprice td{
+        font-size: 25px;
+        padding-top: 40px;
+    }
+    .paymentbtn{
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+    .termscol td{
+        padding-bottom: 50px;
+    }
+    .fa-brands{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+}

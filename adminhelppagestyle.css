@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    display: inline-flex;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+/*MAIN CONTENT*/
+.maincontent{
+    background-color: rgb(51, 51, 51);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.cs-supportsection{
+    height: 400px;
+    width: 60%;
+    background: rgb(0, 0, 0, 0.8) url(images/cssupportmainbg.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+    border: 1px solid white;
+    border-radius: 30px;
+
+}
+.cs-supportsection h2{
+    font-size: 40px;
+    color: white;
+}
+.cs-supportsection p{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+}
+.cs-supportbtn{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.cs-supportbtn:hover{
+    color: black;
+    background: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.cs-hotline{
+    margin-top: 55px;
+}
+.cs-hotlinelist{
+   display: inline-flex;
+   color: white;
+   list-style: none;
+}
+.cs-hotlinelist li{
+    padding: 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+/*FOOTER SECTION*/
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-top: 1px solid black;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .logo img{
+        height: 120px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    .indexnav{
+        z-index: 999;
+    }
+
+    /*MAIN CONTENT*/
+
+    .maincontent{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .cs-supportsection{
+        height: auto;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 40px; 
+    
+    }
+    .cs-supportsection h2{
+        font-size: 30px;
+    }
+    .cs-supportsection p{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .cs-supportbtn{
+        padding: 10px 30px;
+        font-size: 15px;
+    }
+    .cs-hotline{
+        margin-top: 20px;
+    }
+    .cs-hotlinelist li{
+        padding: 0 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+}
+
+
+
+@media (max-width: 375px){
+    /*NAVIGATION SECTION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .aboutnav{
+        display: none;
+    }
+    .logo img{
+        height: 70px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    .indexnav{
+        z-index: 999;
+    }
+
+    /*MAIN CONTENT*/
+    .cs-supportsection{
+        height: auto;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 40px;  
+    
+    }
+    .cs-supportsection h2{
+        font-size: 25px;
+    }
+    .cs-supportsection p{
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+    .cs-supportbtn{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .cs-hotline{
+        margin-top: 15px;
+        font-size: 10px;
+    }
+    .cs-hotlinelist li{
+        padding: 0 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}

@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION BAR*/
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.registersection{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.registersection:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/*MAIN CONTENT*/
+.membermainsection{
+    width: 100%;
+    display: flex;
+    background: rgb(0,0,0,0.6) url(images/memberloginbackground.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+}
+.LCmembermain{
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+.LCmembermain h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+.RCmembermain{
+    width: 50%;
+    background-color: rgb(36, 36, 36);
+    margin: 50px 100px;
+    color: white;
+    padding: 50px 100px;
+    border-radius: 30px;
+}
+.RCmembermain h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+.memberlogin input{
+    width: 500px;
+    margin-top: 20px;
+    height: 40px;
+    padding: 20px;
+    border: none;
+}
+.fa-brands{
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    margin: 10px 10px;
+}
+.fpsection{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+.memberfp{
+    color: white;
+}
+.memberloginbtn{
+    padding: 10px 20px;
+    color: white;
+    background: rgb(36, 36, 36);
+    border: 1px solid white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.memberlogin p{
+    padding: 5px 0px;
+}
+.memberloginbtn:hover{
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
+.loginoption{
+    margin-top: 20px;
+}
+.fa-brands:hover{
+    color: black;
+    background: white;
+    transition: 0.5s;
+}
+
+/*FOOTER SECTION*/
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px){
+    /*NAVIGATION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+        text-align: center;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f6ee;
+    }
+    .logo img{
+        height: 100px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+    }
+    .navlinks a{
+        color:black;
+        text-decoration: none;
+    }
+    .registersection{
+        border: 2px solid black;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+    .back-loginlink{
+        display:none;
+    }
+
+
+    /*MAIN CONTENT*/
+    .membermainsection{
+        width: 100%;
+        display: flex;
+        height: auto;
+    }
+    .LCmembermain{
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        color: white;
+    }
+    .LCmembermain h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .RCmembermain{
+        width: 70%;
+        margin: 50px auto;
+        padding: 50px 70px;
+    }
+    .RCmembermain h1{
+        font-size: 30px;
+        font-weight: 300;
+    }
+    .memberlogin input{
+        width: 100%;
+        margin-top: 20px;
+        height: 40px;
+        padding: 20px;
+        border: none;
+    }
+    .fa-brands{
+        color: white;
+        padding: 15px;
+        border: 1px solid white;
+        margin: 10px 10px;
+    }
+    .fpsection{
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+    .memberfp{
+        color: white;
+    }
+    .memberloginbtn{
+        padding: 10px 20px;
+        color: white;
+        background: rgb(36, 36, 36);
+        border: 1px solid white;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .memberlogin p{
+        padding: 5px 0px;
+    }
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 375px){
+    /*NAVIGATION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+    }
+    .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 10px;
+        align-items: center;
+    }
+    .navlinks a{
+        color:black;
+        text-decoration: none;
+    }
+    .registersection{
+        border: 1px solid black;
+        font-size: 10px;
+        padding: 10px 20px;
+        margin-left: 0px;
+    }
+    .back-loginlink, .helpnav, .homenav{
+        display:none;
+    }
+
+
+    /*MAIN CONTENT*/
+    .membermainsection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .LCmembermain{
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .LCmembermain h1{
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .RCmembermain{
+        width: 80%;
+        margin: 50px auto;
+        padding: 20px 30px;
+        border-radius: 30px;
+    }
+    .RCmembermain h1{
+        font-size: 25px;
+        font-weight: 300;
+    }
+    .memberlogin input{
+        width: 100%;
+        margin-top: 20px;
+        height: 20px;
+        padding: 15px;
+        border: none;
+    }
+    .fa-brands{
+        padding: 10px;
+        margin: 5px 5px;
+    }
+    .fpsection{
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+    .memberfp{
+        font-size: 10px;
+    }
+    .memberloginbtn{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .memberlogin p{
+        padding: 5px 0px;
+    }
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}    
+
+
+
+
+
+
+
+

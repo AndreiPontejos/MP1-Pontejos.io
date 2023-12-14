@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION BAR*/
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.indexnav{
+    z-index: 999;
+    box-shadow: 0 2px 50px 3px;
+}
+.navlinklogout{
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.navlinklogout:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*MAIN CONTENT*/
+.memberstatus{
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5) url(images/memberloginphoto.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    height: auto;
+
+}
+.memberstatustable{
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    background-color: #f9f6ee;
+    margin-bottom: 50px;
+}
+.memberstatus h2{
+    color: white;
+    font-size: 50px;
+    padding: 50px 0px;
+}
+.td1{
+    width: 25%;
+    justify-content: center;
+    text-align: right;
+}
+.td2{
+    width: 25%;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+}
+.appointmentsetsection{
+    background: rgb(53, 53, 53);
+    color: white;
+    padding-bottom: 50px;
+}
+.appointmentsetsection h1{
+    padding-left: 100px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 300;
+}
+.appointmenttable{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f6ee;
+    color: black;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+.dentalclinic{
+    width: 500px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.tda{
+    width: 25%;
+    justify-content: center;
+    text-align: right;
+    font-size: 20px;
+}
+.tdb{
+    width: 25%;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tdb span{
+    font-size: 20px;
+}
+.tdb input[type=radio]{
+    height: 20px;
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.submitrow{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.submitrow button{
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+.submitrow button:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.dateoptionapp{
+    font-size: 17px;
+    border-radius: 20px;
+    padding: 5px 30px;
+    border: 1px solid black;
+}
+.insurancecards{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+.plancarda, .plancardb, .plancardc,.plancardd, .plancarde, .plancardf{
+    border: 1px solid black;
+    width: 30%;
+    margin: 50px 20px;
+}
+.plancards h1{
+    padding: 30px 50px;
+    font-size: 40px;
+}
+.exc-header{
+    font-weight: 300;
+}
+.plancard{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding: 40px;
+    height: 600px;
+}
+.plancard h2{
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+.moreinfo{
+    color:white;
+    padding-bottom: 20px;
+}
+.availbtn{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 30px;
+}
+.descriptiona{
+    padding-bottom: 30px;
+}
+.descriptionb{
+    padding-bottom: 60px;
+}
+.descriptionc{
+    padding-bottom: 60px;
+}
+.descriptiond{
+    padding-bottom: 100px;
+}
+.descriptione{
+    padding-bottom: 120px;
+}
+.descriptionf{
+    padding-bottom: 45px;
+}
+.planprice{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.availbtn:hover{
+    background-color: white;
+    color: rgb(53, 53, 53);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.plancard:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+
+/*FOOTER SECTION*/
+.indexfooters{
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+
+
+    /*NAVIGATION SECTION*/
+
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .logo img{
+        height: 120px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+    }
+    .navlinks a{
+        color:black;
+        text-decoration: none;
+    }
+    .indexnav{
+        z-index: 999;
+    }
+    .navlinklogout{
+        padding: 7px 15px;
+        font-size: 15px;
+    }
+
+    /*MAIN SECTION*/
+    .memberstatustable{
+        max-width: 100%;
+        padding: 30px;
+    }
+    .memberstatus h2{
+        font-size: 30px;
+        padding: 30px 0px;
+    }
+    .td1{
+        width: 25%;
+        justify-content: center;
+        text-align: right;
+        font-size: 12px;
+    }
+    .td2{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 12px;
+    }
+    .appointmentsetsection{
+        background: rgb(53, 53, 53);
+        color: white;
+        padding-bottom: 50px;
+    
+    }
+    .appointmentsetsection h1{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-weight: 300;
+        font-size: 30px;
+        text-align: center;
+        padding-right: 200px;
+    }
+    .appointmenttable{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #f9f6ee;
+        color: black;
+        padding: 40px 0;
+        border-radius: 20px;
+    }
+    .dentalclinic{
+        width: 500px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    .tda{
+        width: 25%;
+        justify-content: center;
+        text-align: right;
+        font-size: 15px;
+        padding: 15px;
+    }
+    .tdb{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding: 10px;
+    }
+    .tdb span{
+        font-size: 15px;
+    }
+    .tdb input[type=radio]{
+        height: 15px;
+        width: 25px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .submitrow{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .submitrow button{
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border: 1px solid black;
+    }
+    .dateoptionapp{
+        font-size: 12px;
+        border-radius: 20px;
+        padding: 5px 20px;
+    }
+    .insurancecards{
+        flex-direction: column;
+    }
+    .plancarda, .plancardb, .plancardc,.plancardd, .plancarde, .plancardf{
+        width: 80%;
+        margin: 50px auto;
+    }
+    .plancards h1{
+        padding: 30px 50px;
+        font-size: 35px;
+    }
+    .exc-header{
+        font-weight: 300;
+    }
+    .plancard{
+        padding: 30px;
+        height: 600px;
+    }
+    .plancard h2{
+        font-size: 30px;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+    .moreinfo{
+        color:white;
+        padding-bottom: 20px;
+    }
+    .availbtn{
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 10px 30px;
+    }
+    .descriptiona{
+        padding-bottom: 30px;
+    }
+    .descriptionb{
+        padding-bottom: 60px;
+    }
+    .descriptionc{
+        padding-bottom: 60px;
+    }
+    .descriptiond{
+        padding-bottom: 100px;
+    }
+    .descriptione{
+        padding-bottom: 120px;
+    }
+    .descriptionf{
+        padding-bottom: 45px;
+    }
+    .planprice{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+}   
+
+
+
+
+@media (max-width: 375px){
+
+    /*NAVIGATION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .logo img{
+        height: 60px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+    }
+    .aboutnav, .helpnav{
+        display: none;
+    }
+    .indexnav{
+        z-index: 999;
+    }
+    .navlinklogout{
+        padding: 7px 15px;
+        font-size: 10px;
+ 
+    }
+
+    /*MAIN CONTENT*/
+
+    .memberstatustable{
+        max-width: 100%;
+        padding: 30px;
+    }
+    .memberstatus h2{
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    .appointmenttable{
+        max-width: 100%;
+        padding: 30px 0;
+    }
+    .td1{
+        width: 25%;
+        justify-content: center;
+        text-align: right;
+        font-size: 8px;
+    }
+    .td2{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 8px;
+    }
+    .appointmentsetsection{
+        padding-bottom: 50px;
+    }
+    .appointmentsetsection h1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 10px;
+        padding-left: 5px;
+    }
+    .dentalclinic{
+        width: 80%;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+    .tda{
+        width: 25%;
+        justify-content: center;
+        text-align: right;
+        font-size: 10px;
+        padding: 10px;
+    }
+    .tdb{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding: 10px;
+    }
+    .tdb span{
+        font-size: 10px;
+    }
+    .tdb input[type=radio]{
+        height: 10px;
+        width: 20px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+    .submitrow{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .submitrow button{
+        font-size: 12px;
+        padding: 7px 17px;
+        margin-top: 20px;
+    }
+    .dateoptionapp{
+        font-size: 10px;
+        border-radius: 20px;
+        padding: 5px 15px;
+    }
+    .insurancecards{
+        flex-direction: column;
+    }
+    .plancarda, .plancardb, .plancardc,.plancardd, .plancarde, .plancardf{
+        max-width: 90%;
+        margin: 50px auto;
+    }
+    .plancards h1{
+        padding: 20px 30px;
+        font-size: 25px;
+    }
+    .exc-header{
+        font-weight: 300;
+    }
+    .plancard{
+        padding: 30px;
+        height: 500px;
+    }
+    .plancard h2{
+        font-size: 20px;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+    .moreinfo{
+        padding-bottom: 20px;
+    }
+    .availbtn{
+        text-decoration: none;
+        padding: 10px 30px;
+    }
+    .descriptiona{
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    .descriptionb{
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    .descriptionc{
+        padding-bottom: 10px;
+        font-size: 12px;
+    }
+    .descriptiond{
+        padding-bottom: 100px;
+        font-size: 12px;
+    }
+    .descriptione{
+        padding-bottom: 120px;
+        font-size: 12px;
+    }
+    .descriptionf{
+        padding-bottom: 45px;
+        font-size: 12px;
+    }
+    .planprice{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+
+    
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}

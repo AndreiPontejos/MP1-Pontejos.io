@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*HEADER*/
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.indexnav{
+    z-index: 999;
+    box-shadow: 0 2px 50px 3px;
+}
+.navlinklogout{
+    padding: 10px 20px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.navlinklogout:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*MAIN CONTENT*/
+.adminstatus{
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5) url(images/adminloginbackground.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    height: auto;
+
+}
+.admintatustable{
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    background-color: #f9f6ee;
+    margin-bottom: 50px;
+}
+.adminstatus h2{
+    color: white;
+    font-size: 50px;
+    padding: 50px 0px;
+}
+.td1{
+    width: 25%;
+    justify-content: center;
+    text-align: right;
+}
+.td2{
+    width: 25%;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+}
+/*PATIENT PLAN STATUS SECTION*/
+.patientplanstatussection{
+    background: rgb(53, 53, 53);
+    color: white;
+    padding: 40px 0;
+
+}
+.patientplanstatussection h1{
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+.planstatustable{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f6ee;
+    color: black;
+    padding: 40px 0;
+    border-radius: 20px;
+}
+.tda{
+    width: 25%;
+    justify-content: center;
+    text-align: right;
+    font-size: 20px;
+}
+.tdb{
+    width: 25%;
+    justify-content: center;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.tdb input{
+    width: 500px;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.submitrow{
+    text-align: center;
+    padding-top: 20px;
+}
+.submitrow a{
+    font-size: 20px;
+    padding: 10px 30px;
+    color:black;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.submitrow a:hover{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/*FOOTER SECTION*/
+.indexfooters{
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    /*NAVIGATION SECTION*/
+
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .logo img{
+        height: 120px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+    }
+    .indexnav{
+        z-index: 999;
+    }
+    .navlinklogout{
+        padding: 7px 15px;
+        font-size: 15px;
+    }
+
+    /*MAIN CONTENT SECTION*/
+
+    .adminstatustable{
+        width: 100%;
+        padding: 15px;
+    }
+    .adminstatus h2{
+        font-size: 30px;
+        padding: 30px 0px;
+    }
+    .td1{
+        width: 25%;
+        justify-content: center;
+        text-align: right;
+        font-size: 12px;
+    }
+    .td2{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding-left: 12px;
+        font-size: 12px;
+    }
+
+    /*PATIENT CHECKER SECTION*/
+    .patientplanstatussection h1{
+        justify-content: center;
+        font-weight: 300;
+    }
+    .planstatustable{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px 10px;
+    }
+    .tda{
+        font-size: 15px;
+    }
+    .tdb{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .tdb input{
+        width: 450px;
+    }
+    .submitrow{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .submitrow a{
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+    .patientplanstatussection{
+    background: rgb(53, 53, 53);
+    color: white;
+    padding-bottom: 50px;
+    }
+
+}
+
+
+
+
+@media (max-width: 375px){
+
+    /*NAVIGATION*/
+
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .logo img{
+        height: 60px;
+        width: auto;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 20px;
+    }
+    .aboutnav, .helpnav{
+        display: none;
+    }
+    .indexnav{
+        z-index: 999;
+    }
+    .navlinklogout{
+        padding: 7px 15px;
+        font-size: 10px;
+ 
+    }
+
+    /*MAIN CONTENT SECTION*/
+
+    .adminstatustable{
+        max-width: 100%;
+        padding: 10px;
+    }
+    .adminstatus h2{
+        font-size: 25px;
+        padding: 20px 0px;
+    }
+    .td1{
+        width: 25%;
+        justify-content: center;
+        text-align: right;
+        font-size: 8px;
+    }
+    .td2{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding-left: 5px;
+        font-size: 8px;
+    }
+
+    /*PATIENT CHECKER SECTION*/
+    .patientplanstatussection h1{
+        font-weight: 300;
+        font-size: 20px;
+    }
+    .planstatustable{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 30px 10px;
+        border-radius: 10px;
+    }
+    .tda{
+        font-size: 12px;
+    }
+    .tdb{
+        width: 25%;
+        justify-content: center;
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .tdb input{
+        width: 200px;
+        padding: 5px 20px;
+    }
+    .submitrow{
+        text-align: center;
+        padding-top: 20px;
+    }
+    .submitrow a{
+        font-size: 15px;
+        padding: 7px 20px;
+    }
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}
+

@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*NAVIGATION BAR*/
+.container{
+    display: flex;
+}
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+.registersection{
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-left: 100px;
+}
+.navlink:hover{
+    color: rgb(6, 146, 146);
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+.registersection:hover{
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+    transition: 0.5s;
+}
+/*NAVIGATION BAR*/
+.navigation{
+    display: flex;
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f6ee;
+}
+.logo img{
+    height: 150px;
+    width: auto;
+}
+.navbar{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 150px;
+}
+.navlinks{
+    display: inline-flex;
+    padding: 0 30px;
+}
+.navlinks a{
+    color:black;
+    text-decoration: none;
+}
+/*MAIN CONTENT SECTION*/
+.maincontent{
+    background: url(images/memberregistrationbackground.jpg);
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.adminregheader{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 50px;
+    color: white;
+}
+.adminregtable{
+    max-width: 100%;
+    align-items: center;
+    margin-left: auto;  
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+tr{
+    padding: 30px;
+}
+.adminregheading{
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+}
+.nameinput{
+    width: 70%;
+}
+.secondrowlabelgender{
+    padding-left: 15px;
+}
+.secondrowlabel ,.secondrowlabelgender{
+    padding-top: 20px;
+}
+.addresssection{
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+textarea{
+    resize: none;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 95%;
+}
+.daterow td{
+    padding-top: 20px;
+}
+input{
+    height: 35px;
+    padding: 10px
+}
+input[type='radio']{
+    height: 20px;
+    width: 20px;
+}
+.movingdate{
+    margin-left: 20px;
+    text-align: center;
+}
+.admincontact, .admincontactb{
+    margin-left: 20px;
+    width: 60%;
+}
+.admincontactinfo td{
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.admincontactinfob td{
+    padding-left: 50px;
+}
+.contactb{
+    width: 40%
+}
+.admincontact{
+    margin-left: 30px;
+}
+.span-a{
+    margin-left: 65px;
+}
+.span-c{
+    margin-left: 25px;
+}
+.contactc{
+    margin-left: 30px;
+}
+.contactd{
+    margin-left: 31px;
+    width: 40%;
+}
+.companysection h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.companysectioninfo input{
+    width: 500px;
+    padding: 10px 30px;
+}
+.companysectioninfo td{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.companysectioninfob td{
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.companyaddress{
+    width: 98%;
+}
+
+
+.submitbtn{
+    text-align: center;
+}
+.submitbtn button{
+    margin-top: 30px;
+    font-size: 25px;
+    padding: 10px 30px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: 300;
+}
+.submitbtn button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}
+
+/*FOOTER SECTION*/
+
+.indexfooters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.indexfooter{
+    margin: 50px;
+}
+.indexfooter li{
+    list-style: none;
+}
+.indexfooter a{
+    text-decoration: none;
+    color: black;
+}
+.indexfooter h3{
+    font-size: 30px;
+    padding: 20px 0;
+}
+.indexfooter li{
+    font-size: 20px;
+    line-height: 50px;
+}
+.footerd img{
+    height: 300px;
+}
+.indexfooter a:hover{
+    color: rgb(173, 25, 25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 768px){
+
+    /*NAVIGATION SECTION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 50px;
+    }
+    .logo img{
+        height: 150px;
+        width: auto;
+    }
+    .navlinks{
+        padding: 0 20px;
+    }
+    .navlinks a{
+        font-size: 20px;
+    }
+    .homenav{
+        display:none;
+    }
+    .navlist{
+        display: inline-flex;
+        align-items: center;
+    }
+    .back-loginnav{
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+    .back-loginnav:hover{
+        color: white;
+        background-color: black;
+        transition: 0.5s;
+    }
+    
+
+    /*MAIN CONTENT SECTION*/
+
+    .adminregheader{
+        font-size: 35px;
+        text-align: center;
+        font-weight: 400;
+        padding-top: 40px;
+    }
+    tr{
+        padding: 30px;
+    }
+    .adminregheading{
+        width: 100%;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .nameinput{
+        width: 90%;
+        padding: 5px 10px;
+    }
+    .secondrowlabelgender{
+        padding-left: 15px;
+    }
+    .secondrowlabel ,.secondrowlabelgender{
+        padding-top: 10px;
+    }
+    .addresssection{
+        height: 50px;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    textarea{
+        resize: none;
+        margin-left: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        width: 95%;
+    }
+    .daterow td{
+        padding-top: 15px;
+    }
+    input{
+        height: 35px;
+        padding: 10px
+    }
+    .movingdate{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .admincontact, .admincontactb{
+        margin-left: 10px;
+        width: 80%;
+    }
+    .admincontactinfo td{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .admincontactinfob td{
+        padding-left: 50px;
+    }
+    .contactb{
+        width: 90%
+    }
+    .admincontact{
+        margin-left: 30px;
+    }
+    .span-a{
+        margin-left: 30px;
+    }
+    .span-c{
+        margin-left: 0px;
+    }
+    .span-d{
+        margin-left: 30px;
+    }
+    .contactc{
+        margin-left: 0px;
+        width: 88%;
+    }
+    .contactd{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .companysection h1{
+        font-size: 25px;
+        font-weight: 500;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .companysectioninfo input{
+        width: 90%;
+        padding: 10px 30px;
+    }
+    .companysectioninfob td{
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .companyaddress{
+        width: 98%;
+    }
+    .submitbtn{
+        text-align: center;
+    }
+    .submitbtn button{
+        margin-top: 30px;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 20px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter h3{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .footerd img{
+        height: 200px;
+    }
+
+}
+
+@media (max-width: 375px){
+
+    /*NAVIGATION SECTION*/
+    .navigation{
+        display: flex;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .logo img{
+        height: 50px;
+        width: auto;
+    }
+    .homenav{
+        display:none;
+    }
+    .back-loginnav{
+        display: none;
+    }
+    .navlinks{
+        display: inline-flex;
+        padding: 0 0px;
+    }
+    .navlinks a{
+        font-size: 15px;
+    }
+    .helpnav{
+        border: 1px solid black;
+        padding: 5px 10px;
+    }
+
+    /*MAIN CONTENT*/
+
+    .adminregheader{
+        font-size: 25px;
+        text-align: center;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    .adminregtable{
+        margin-top: 15px;
+        padding: 15px;
+    }
+    .adminregheading{
+        width: 100%;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .namelabels{
+        font-size: 15px;
+    }
+    .nameinput{
+        width: 90%;
+        padding: 3px 10px;
+        height: 30px;
+    }
+    .secondrowlabelgender{
+        padding-left: 0px;
+    }
+    .secondrowlabel ,.secondrowlabelgender{
+        padding-top: 10px;
+    }
+    .secondrowform{
+        font-size: 15px;
+    }
+    .addresssection{
+        height: 40px;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    textarea{
+        resize: none;
+        margin-left: 5px;
+        margin-top: 10px;
+        padding: 10px;
+        width: 95%;
+    }
+    .daterow td{
+        padding-top: 15px;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    input{
+        height: 35px;
+        padding: 10px
+    }
+    .movingdate{
+        margin-left: 20px;
+        text-align: center;
+    }
+    .admincontact, .admincontactb{
+        margin-left: 10px;
+        width: 80%;
+    }
+    .admincontactinfo td{
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .admincontactinfob td{
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+    .admincontact{
+        margin-left: 30px;
+    }
+    .span-a{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .span-b{
+        font-size: 15px;
+    }
+    .span-c{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .span-d{
+        margin-left: 0px;
+        font-size: 15px;
+    }
+    .contacta{
+        width: 80%;
+        height: 20px;
+    }
+    .contactb{
+        width: 80%;
+        height: 20px;
+    }
+    .contactc{
+        margin-left: 0px;
+        width: 90%;
+        height: 20px;
+    }
+    .contactd{
+        margin-left: 0px;
+        width: 100%;
+        height: 20px;
+    }
+    .companysection h1{
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .companysectioninfo span{
+        font-size: 15px;
+    }
+    .companysectioninfo input{
+        width: 90%;
+        padding: 10px 10px;
+        height: 20px;
+    }
+    .companysectioninfob td{
+        padding-left: 10px;
+        padding-top: 15px;
+        font-size: 15px;
+    }
+    .companyaddress{
+        width: 98%;
+    }
+    .submitbtn{
+        text-align: center;
+    }
+    .submitbtn button{
+        margin-top: 30px;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+
+
+    /*FOOTER SECTION*/
+    .indexfooters{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .indexfooter{
+        margin: 10px;
+    }
+    .indexfooter li{
+        list-style: none;
+        padding: 2px 0;
+    }
+    .indexfooter a{
+        text-decoration: none;
+        color: black;
+    }
+    .indexfooter h3{
+        font-size: 7px;
+        padding: 10px 0;
+    }
+    .indexfooter li{
+        font-size: 5px;
+        line-height: 10px;
+    }
+    .footerd img{
+        height: 100px;
+    }
+}
